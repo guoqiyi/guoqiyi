@@ -8,6 +8,9 @@ header nav ul li{
     display: block;
 }
 */
+main article h1{
+    text-align: center;
+}
 footer{
     border-top-style: dashed;
     height: 30px;
