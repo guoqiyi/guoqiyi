@@ -1,6 +1,6 @@
 header{
     background-color: #15a230;
-    color: #FFF
+    color: #fff;
 }
 /*
 header nav ul li{
@@ -14,9 +14,9 @@ main article h1{
     font-size: 90px;
 }
 footer{
-    border-top: 1px #cccccc dashed;
+    border-top: 1px #ccc dashed;
     height: 30px;
     text-align: center;
-    color: #000000;
-    background-color: #F1F1F1;
+    color: #000;
+    background-color: #f1f1f1;
 }
