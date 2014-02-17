@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+        .taichi {
+            position: relative;
+            width: 100px;
+            /* 50 - 2 */
+            height: 200px;
+            /* 100 - 2 - 2 */
+            background: #fff;
+            border: solid #4683ea;
+            border-width: 0 100px 0 0;
+            border-radius: 50%;
+        }
+        .white-circle {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background: #fff;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .white-circle::after {
+            content:"";
+            position: absolute;
+            top: 34px;
+            /* (50-16)/2 */
+            left: 34px;
+            /* (50-16)/2 */
+            background: #4683ea;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+        }
+        .black-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #4683ea;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .black-circle::after {
+            content:"";
+            position: absolute;
+            top: 34px;
+            /* (50-16)/2 */
+            left: 34px;
+            /* (50-16)/2 */
+            background: #fff;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+        }
+        .taichi {
+            margin: 100px auto;
+            -webkit-animation: rotate 2s infinite linear;
+            -moz-animation: rotate 2s infinite linear;
+            -o-animation: rotate 2s infinite linear;
+            animation: rotate 2s infinite linear;
+        }
+        @-webkit-keyframes rotate {
+            form {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @-moz-keyframes rotate {
+            form {
+                -moz-transform: rotate(0deg);
+            }
+            to {
+                -moz-transform: rotate(360deg);
+            }
+        }
+        @-o-keyframes rotate {
+            form {
+                -o-transform: rotate(0deg);
+            }
+            to {
+                -o-transform: rotate(360deg);
+            }
+        }
+        @keyframes rotate {
+            form {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="taichi">
+    <div class="white-circle"></div>
+    <div class="black-circle"></div>
+</div>
+</body>
+</html>
