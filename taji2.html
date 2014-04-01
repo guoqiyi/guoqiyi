@@ -6,38 +6,55 @@
         body {
             background: #f1f1f1;
         }
+
         .as1 {
-            width: 400px; height: 400px;    /* 太极图大小 */
-            box-shadow: 0 0 10px 1px #ffff00;
-        }
-        .as1 , .ar2 , .at1{
-            background: #ffffff;
-        }
-        .as2 , .ar1 , .at2 {
-            background: #000000;
+            width: 400px;
+            height: 400px; /* 太极图大小 */
+            box-shadow: 0 0 10px 1px #ff0;
         }
 
-        .as1 , .as1 div {
+        .as1, .ar2, .at1 {
+            background: #fff;
+        }
+
+        .as2, .ar1, .at2 {
+            background: #000;
+        }
+
+        .as1, .as1 div {
             position: relative;
             border-radius: 8000px;
         }
+
         .as2.as2 {
-            width: 50%; height: 100%;
+            width: 50%;
+            height: 100%;
             border-radius: 8000px 0 0 8000px;
         }
-        .ar1 , .ar2 {
-            left: 50%; width: 100%; height: 50%;
+
+        .ar1, .ar2 {
+            left: 50%;
+            width: 100%;
+            height: 50%;
         }
-        .at1 , .at2 {
-            left: 35%; top: 35%; width: 30%; height: 30%;
+
+        .at1, .at2 {
+            left: 35%;
+            top: 35%;
+            width: 30%;
+            height: 30%;
         }
     </style>
 </head>
 <body>
 <div class="as1">
     <div class="as2">
-        <div class="ar1"><div class="at1"></div></div>
-        <div class="ar2"><div class="at2"></div></div>
+        <div class="ar1">
+            <div class="at1"></div>
+        </div>
+        <div class="ar2">
+            <div class="at2"></div>
+        </div>
     </div>
 </div>
 </body>
